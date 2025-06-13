@@ -78,7 +78,8 @@ const UploadPage = () => {
       const data = await res.json();
 
 
-      console.log(data)
+      console.log(data);
+
       if (res.ok && data.url) {
         setVideoUrl(data.url);
         setStatus("Upload successful!");
